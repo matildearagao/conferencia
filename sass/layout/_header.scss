@@ -1,0 +1,35 @@
+.header{
+    height: 100vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(black, 0.2), 
+        rgba(black, 1)),
+        url(../img/cinnapan-header.jpg);
+        background-position: right;
+        background-size: 120%;
+
+
+    &__logo-box{
+        top: 2rem;
+        left: 4rem;
+        position: absolute;
+    }
+
+    &__logo{
+        height: 8rem;
+    }
+
+    &__text-box{
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        left: 50%;
+        display: inline-block;
+        width: 450px;
+        }
+
+    &__img{
+        text-align: right;
+        width: 100%;
+    }
+}
