@@ -10,22 +10,7 @@
   }
 }
 
-.circle-container {
-  display: inline-flex;
-  width: 100%;
-  justify-content: center;
-}
 
-.circle {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px dashed $color-black;
-  background-color: $color-white;
-  margin: 0 15px;
-  text-align: center;
-  padding-top: 10px;
-}
 
 .btn-wrapper {
   text-align: center;

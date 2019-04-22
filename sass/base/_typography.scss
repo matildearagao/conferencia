@@ -77,10 +77,22 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
-  line-height: $default-font-size;
-  font-weight: 100;
+  line-height: 2.2rem;
+  font-weight: 300;
+  color: $color-black;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+
+  &--white{
+    color: $color-white;
+  }
+}
+
+.title-bold{
+  font-size: $default-font-size;
+  line-height: 2.2rem;
+  color: $color-black;
+  margin-bottom: 5px;
 }
