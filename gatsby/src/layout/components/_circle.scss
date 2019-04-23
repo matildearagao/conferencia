@@ -12,7 +12,7 @@
   background-color: $color-white;
   margin: 0 15px;
   text-align: center;
-  padding-top: 10px;
+  padding: 30px;
 
   &--photo{
     border: none;
@@ -30,5 +30,6 @@
     width: 80px;
     height: 80px;
     margin: 0 40px;
+    padding: 15px;
   }
 }

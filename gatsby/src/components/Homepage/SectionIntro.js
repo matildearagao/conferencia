@@ -1,6 +1,8 @@
 import React from "react"
+import Img from "gatsby-image"
+import { Link } from 'gatsby'
 
-export default function SectionIntro() {
+export default function SectionIntro({ chocolateBar, cinnamonRoll, sun }) {
   return (
     <section className="section-intro">
       <div className="container">
@@ -11,31 +13,22 @@ export default function SectionIntro() {
         <div className="row">
           <div className="circle-container">
             <div className="circle">
-              <img
-                src="../img/chocolate-bar.png"
-                width="100"
-                alt="ingredients"
-              />
+              <Img fluid={chocolateBar} alt="ingredients" />
             </div>
             <div className="circle">
-              <img
-                src="../img/cinnamon-roll.png"
-                width="100"
-                alt="ingredients"
-              />
+              <Img fluid={cinnamonRoll} alt="cinnamon rolls" />
             </div>
-
             <div className="circle">
-              <img src="../img/sun.png" width="100" alt="ingredients" />
+              <Img fluid={sun} alt="sun icon" />
             </div>
           </div>
           <div className="btn-wrapper">
-            <a href="#" className="btn btn--white-stroke btn--animated">
+            <Link to="/contacts" className="btn btn--white-stroke btn--animated">
               Contacta-nos
-            </a>
-            <a href="#" className="btn btn--white btn--animated">
+            </Link>
+            <Link to="/Menu" className="btn btn--white btn--animated">
               Ver Menu
-            </a>
+            </Link>
           </div>
         </div>
       </div>

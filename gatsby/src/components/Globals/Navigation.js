@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 export default function Navigation() {
   return (
@@ -13,19 +14,19 @@ export default function Navigation() {
         <nav className="navigation__nav">
             <ul className="navigation__list">
                 <li className="navigation__item">
-                  <a href="/index.html" className="navigation__link">Home</a>
+                  <Link to="/" className="navigation__link">Home</Link>
                 </li>
                 <li className="navigation__item">
-                  <a href="/about.html" className="navigation__link">About Us</a>
+                  <Link to="/about" className="navigation__link">About Us</Link>
                 </li>
                 <li className="navigation__item">
-                  <a href="/events.html" className="navigation__link">Events</a>
+                  <Link to="/events" className="navigation__link">Events</Link>
                 </li>
                 <li className="navigation__item">
-                  <a href="/menu.html" className="navigation__link">Menu</a>
+                  <Link to="/menu" className="navigation__link">Menu</Link>
                 </li>
                 <li className="navigation__item">
-                  <a href="/menu.html" className="navigation__link">Contacts</a>
+                  <Link to="/contacts" className="navigation__link">Contacts</Link>
                 </li>
             </ul>
         </nav>
