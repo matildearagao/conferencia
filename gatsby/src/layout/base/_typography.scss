@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Botram;
+  src: url(../fonts/Botram.otf);
+}
+@font-face {
+  font-family: Veneer;
+  src: url(../fonts/Veneer.ttf);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: $color-grey-dark;
+}
+
+.heading-main {
+  color: $color-black;
+
+  font-family: Veneer, sans-serif;
+  backface-visibility: hidden;
+  font-size: 4rem;
+
+  display: block;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  @include respond(phone) {
+    letter-spacing: 1rem;
+    font-size: 5rem;
+  }
+  
+  &--white {
+    color: $color-white;
+  }
+
+  &--yellow {
+    color: $color-primary;
+  }
+}
+
+.heading-sub {
+  color: $color-black;
+
+  display: block;
+  font-family: Botram, serif;
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: capitalize;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  margin-bottom: 2rem;
+
+  @include respond(phone) {
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--yellow {
+    color: $color-primary;
+  }
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  line-height: 2.2rem;
+  font-weight: 300;
+  color: $color-black;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &--white{
+    color: $color-white;
+  }
+}
+
+.title-bold{
+  font-size: $default-font-size;
+  line-height: 2.2rem;
+  color: $color-black;
+  margin-bottom: 5px;
+}

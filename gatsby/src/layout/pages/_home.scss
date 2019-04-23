@@ -1,0 +1,98 @@
+.section-intro {
+  background-image: radial-gradient(
+    rgba($color-primary-light, 1),
+    rgba($color-primary-dark, 1)
+  );
+  padding: 5rem 0;
+
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
+}
+
+
+
+.btn-wrapper {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.display {
+  height: 100vh;
+  padding: 60px 0;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(black, 0.6),
+      rgba(black, 0.6)
+    ),
+    url(../images/bg-stone-red.jpg);
+  background-position: right;
+  background-size: 120%;
+
+  &-wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.display-img {
+  height: 350px;
+  width: 28%;
+  margin: 0 10px 20px 10px;
+}
+
+.testemonials {
+  background-image: linear-gradient(
+      to right,
+      rgba(black, 0.2),
+      rgba(black, 0.2)
+    ),
+    url(../images/cinnapan-3.jpeg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 60px 0;
+
+  &-wrapper {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+  &-box {
+    margin-bottom: 20px;
+    background-color: rgba(black, 0.6);
+    color: $color-white;
+    padding: 20px;
+    margin: 0 10px 20px 10px;
+
+    &-name {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+  }
+}
+.fa-facebook-f,
+.fa-instagram{
+    font-size: 3rem !important;
+    margin: auto 15px;
+    color: white;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: $color-black;
+}
+
+.hashtag{
+  margin: 10px auto;
+  display: inline-block;
+  color: $color-black;
+  border: 1px solid $color-black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 400;
+}

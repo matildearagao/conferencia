@@ -1,0 +1,20 @@
+.cta{
+    height: 20vh;
+    background-image: radial-gradient($color-secondary-light, $color-secondary-dark);
+
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 80px;
+    }
+    &-heading{
+        width: 70%;
+
+        &--sub{
+            color: $color-primary;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+}
