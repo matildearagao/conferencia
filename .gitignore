@@ -1,3 +1,6 @@
+#API Contentful
+.env.development
+
 # Logs
 logs
 *.log
