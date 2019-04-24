@@ -1,21 +1,27 @@
-.section-info{
-    background-color: $color-primary-light;
-    padding: 60px 0;
+.section-info {
+  background-color: $color-primary-light;
+  padding: 60px 0;
 
-    &__wrapper{
-        width: 80%;
-        margin: 0 auto;
-    }
+  &__wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    &__img-bw{
-        width: 300px;
-        height: 300px;
-        margin: 0 30px;
+  &__img-bw {
+    width: 300px;
+    height: 300px;
+    margin: 0 30px;
+
+    @include respond(phone) {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 30px auto;
     }
+  }
 }
 
-.section-process{
-    background-image: linear-gradient(
+.section-process {
+  background-image: linear-gradient(
       to right,
       rgba(rgb(255, 255, 255), 0.5),
       rgba(rgb(255, 255, 255), 0.5)
@@ -24,17 +30,16 @@
   background-position: right;
   background-size: 120%;
 
-    padding: 60px 0;
-    width: 100%;
+  padding: 60px 0;
+  width: 100%;
 
+  &__wrapper {
+    width: 80%;
+    margin: 20px auto;
+  }
 
-    &__wrapper{
-        width: 80%;
-        margin: 20px auto;
-    }
-
-    &__text{
-        margin: 0 5px;
-        margin-top: -20px;
-    }
+  &__text {
+    margin: 0 5px;
+    margin-top: -20px;
+  }
 }

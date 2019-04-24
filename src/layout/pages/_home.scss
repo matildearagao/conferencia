@@ -6,7 +6,7 @@
   padding: 5rem 0;
 
   @include respond(tab-port) {
-    padding: 20rem 0;
+    // padding: 20rem 0;
   }
 }
 
@@ -19,7 +19,7 @@
 
 .display {
   height: 100vh;
-  padding: 60px 0;
+  padding: 60px auto;
   text-align: center;
   background-image: linear-gradient(
       to right,
@@ -27,13 +27,26 @@
       rgba(black, 0.6)
     ),
     url(../images/bg-stone-red.jpg);
-  background-position: right;
-  background-size: 120%;
+  background-position: center;
+  background-size: cover;
+
+  @include respond(phone){
+    display: block;
+    height: 100%;
+    padding: 60px 0;
+  }
 
   &-wrapper{
     width: 100%;
     margin: 0 auto;
     display: flex;
+    
+    @include respond(phone){
+      display: block;
+      padding: 10px 0;
+  
+    }
+   
   }
 }
 
@@ -41,6 +54,11 @@
   height: 350px;
   width: 28%;
   margin: 0 10px 20px 10px;
+  @include respond(phone){
+    width: 50%;
+    margin: 10px auto;
+    height: 150px;
+  }
 }
 
 .testemonials {

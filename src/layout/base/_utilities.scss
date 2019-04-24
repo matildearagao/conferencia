@@ -37,4 +37,8 @@
 
 .float-right{
     float: right !important;
+
+    @include respond(phone){
+    clear: both !important;
+    }
 }

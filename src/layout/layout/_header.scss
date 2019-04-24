@@ -3,7 +3,8 @@
   background-image: linear-gradient(to right, rgba(black, 0.2), rgba(black, 1)),
     url(../images/cinnapan-header.jpg);
   background-position: right;
-  background-size: 120%;
+  background-size: cover;
+  
 
   &--about {
     height: 50vh;
@@ -13,8 +14,8 @@
         rgba(black, 1)
       ),
       url(../images/cinnapan-header.jpg);
-    background-position: right;
-    background-size: 120%;
+    background-position: center;
+    background-size: cover;
   }
 
   &__logo-box {
@@ -34,7 +35,18 @@
     top: 30%;
     left: 50%;
     display: inline-block;
-    width: 450px;
+    width: 30%;
+
+    @include respond(tab-port){
+      width: 50%;
+      top: 30%;
+      left: 30%;
+  }
+    @include respond(phone){
+      width: 80%;
+      top: 30%;
+      left: 10%;
+  }
   }
   &__text {
     text-align: center;
