@@ -46,6 +46,7 @@ class Contacts extends Component {
                   id="date"
                   name="data"
                   className="form__input"
+                  selected={this.state.startDate}
                   onChange={this.handleChange}
                 />
                 <label htmlFor="order" className="form__label">
