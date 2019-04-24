@@ -39,7 +39,7 @@ export const query = graphql`
           title
           category
           image {
-            fluid(maxWidth: 600, maxHeight: 600) {
+            fluid(maxWidth: 600) {
               ...GatsbyContentfulFluid_tracedSVG
             }
           }
