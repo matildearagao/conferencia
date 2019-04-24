@@ -4,6 +4,8 @@ import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css"
 
 class Contacts extends Component {
+
+  
   constructor(props) {
     super(props)
     this.state = {
@@ -16,6 +18,10 @@ class Contacts extends Component {
     this.setState({
       startDate: date,
     })
+  }
+
+  componentDidMount(){
+    this.handleChange();
   }
 
   render() {
