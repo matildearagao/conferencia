@@ -5,35 +5,30 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Header from "../components/Globals/Header"
-import Separator from "../components/Globals/Separator"
-import Cta from "../components/Globals/Cta"
 import SectionInfo from "../components/About/SectionInfo"
 import SectionProcess from "../components/About/SectionProcess"
 
 const AboutPage = ({data}) => (
   <Layout title="Home" >
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Header styleClass="header--about" title="Sobre nós" logo={data.logo.childImageSharp.fluid}/>
+    <Header styleClass="header--about" title="conferencia nome" logo={data.logo.childImageSharp.fluid}/>
     <main>
-      <SectionInfo cinnapanPhoto={data.cinnapanBox.childImageSharp.fluid} styleClass="float-right"/>
-      <Separator styleClass="separator--home" />
-      <SectionInfo cinnapanPhoto={data.cinnapanCook.childImageSharp.fluid} />
-      <SectionProcess chocolateBar={data.chocolateBar.childImageSharp.fluid} cinnamonRoll={data.cinnamonRoll.childImageSharp.fluid} sun={data.sun.childImageSharp.fluid}/>
-      <Cta />
+      <SectionInfo direito={data.direito.childImageSharp.fluid} styleClass="float-right"/>
+      <SectionProcess photo1={data.photo1.childImageSharp.fluid} photo2={data.photo2.childImageSharp.fluid} photo3={data.photo3.childImageSharp.fluid}/>
     </main>
   </Layout>
 )
 
 export const query = graphql`
 {
-  logo:file(relativePath: {eq: "Logo-Cinnapan-horizontal-branco.png"}) {
+  logo:file(relativePath: {eq: "logo-placeholder.png"}) {
     childImageSharp {
       fluid(maxWidth: 600) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   },
-  cinnapanBox:file(relativePath: {eq: "cinnapan-box.jpg"}) {
+  direito:file(relativePath: {eq: "direito.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 600) {
         ...GatsbyImageSharpFluid_tracedSVG
@@ -47,21 +42,21 @@ export const query = graphql`
       }
     }
   },
-  chocolateBar:file(relativePath: {eq: "chocolate-bar.png"}) {
+  photo1:file(relativePath: {eq: "speaker1.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 200) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   },
-  cinnamonRoll:file(relativePath: {eq: "cinnamon-roll.png"}) {
+  photo2:file(relativePath: {eq: "cinnamon-roll.png"}) {
     childImageSharp {
       fluid(maxWidth: 200) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   },
-  sun:file(relativePath: {eq: "sun.png"}) {
+  photo3:file(relativePath: {eq: "sun.png"}) {
     childImageSharp {
       fluid(maxWidth: 200) {
         ...GatsbyImageSharpFluid_tracedSVG

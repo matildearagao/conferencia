@@ -13,8 +13,6 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px dashed $color-black;
-  background-color: $color-white;
   margin: 0 15px;
   text-align: center;
   padding: 30px;
@@ -25,12 +23,9 @@
 
   &--photo{
     border: none;
-    
-
-    &-1{
-        background-image: url(../images/cinnapan-1.jpg);
-        background-size: cover;
-    }
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 
   }
   &--small{

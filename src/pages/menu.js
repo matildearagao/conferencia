@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 
 import Header from "../components/Globals/Header"
 import Menu from "../components/Menu/Menu"
-import Cta from "../components/Globals/Cta"
 
 const MenuPage = ({ data }) => (
   <Layout title="Home">
@@ -18,14 +17,13 @@ const MenuPage = ({ data }) => (
     />
     <main>
     <Menu items={data.menu} />
-      <Cta />
     </main>
   </Layout>
 )
 
 export const query = graphql`
   {
-    logo: file(relativePath: { eq: "Logo-Cinnapan-horizontal-branco.png" }) {
+    logo: file(relativePath: { eq: "logo-placeholder.png" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG

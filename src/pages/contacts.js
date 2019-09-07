@@ -20,7 +20,7 @@ const AboutPage = ({data}) => (
 
 export const query = graphql`
 {
-  logo:file(relativePath: {eq: "Logo-Cinnapan-horizontal-branco.png"}) {
+  logo:file(relativePath: {eq: "logo-placeholder.png"}) {
     childImageSharp {
       fluid(maxWidth: 600) {
         ...GatsbyImageSharpFluid_tracedSVG

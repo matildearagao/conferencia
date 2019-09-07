@@ -21,9 +21,9 @@ body {
   font-family: Veneer, sans-serif;
   backface-visibility: hidden;
   font-size: 4rem;
+  line-height: 4rem;
 
   display: block;
-  font-size: 4rem;
   font-weight: 400;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -91,10 +91,15 @@ body {
 }
 
 .title-bold{
-  font-size: $default-font-size;
+  font-size: 2rem;
   line-height: 2.2rem;
   color: $color-black;
-  margin-bottom: 5px;
+  margin: 10px auto;
+  text-transform: uppercase;
+
+  &--white{
+    color: $color-white;
+  }
 }
 
 .title--menu{

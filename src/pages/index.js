@@ -8,33 +8,31 @@ import SectionIntro from "../components/Homepage/SectionIntro"
 import SectionDisplayMenu from "../components/Homepage/SectionDisplayMenu"
 import SectionTestemonials from "../components/Homepage/SectionTestemonials"
 import Separator from "../components/Globals/Separator"
-import Cta from "../components/Globals/Cta"
 
 
 const IndexPage = ({data}) => (
   <Layout title="Home" >
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <HeaderHome styleClass="header" img={data.img.childImageSharp.fluid} logo={data.logo.childImageSharp.fluid}  />
+    <HeaderHome styleClass="header" logo={data.logo.childImageSharp.fluid}  />
     <main>
       <SectionIntro chocolateBar={data.chocolateBar.childImageSharp.fluid} cinnamonRoll={data.cinnamonRoll.childImageSharp.fluid} sun={data.sun.childImageSharp.fluid}/>
       <Separator styleClass="separator--home" />
       <SectionDisplayMenu cinnapanMenu={data.cinnapanMenu.childImageSharp.fluid} />
       <SectionTestemonials />
-      <Cta />
     </main>
   </Layout>
 )
 
 export const query = graphql`
 {
-  img:file(relativePath: {eq: "EnrolateSabor.png"}) {
+  imgBckg:file(relativePath: {eq: "imgBckg.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3000) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   },
-  logo:file(relativePath: {eq: "Logo-Cinnapan-horizontal-branco.png"}) {
+  logo:file(relativePath: {eq: "logo-placeholder.png"}) {
     childImageSharp {
       fluid(maxWidth: 600) {
         ...GatsbyImageSharpFluid_tracedSVG

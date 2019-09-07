@@ -3,17 +3,21 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
-const Header = ({ styleClass, img, logo }) => (
+const Header = ({ styleClass, logo }) => (
   <header className={styleClass}>
     <div className="header__logo-box">
       <Img fluid={logo} alt="Cinnapan logo" className="header__logo" />
     </div>
-    <div className="container">
+    <div className="header__container">
       <div className="header__text-box">
-        <Img fluid={img} alt="Enrola-te ao sabor" className="header__img" />
+        <h1> CONFERENCIA NOME</h1>
+        <h3>20 de setembro de 2019</h3>
 
-        <Link to="/Menu" className="btn btn--yellow btn--animated">
-          Ver Menu
+        <em>conferencia details</em>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque eveniet, ab ex illum animi quam itaque odio. Dolore amet at libero unde qui sequi.</p>
+
+        <Link to="/Menu" className="btn btn--white btn--animated">
+          Ver Conferência
         </Link>
       </div>
     </div>

@@ -23,9 +23,7 @@ export default function SectionIntro({ chocolateBar, cinnamonRoll, sun }) {
             </div>
           </div>
           <div className="btn-wrapper">
-            <Link to="/contacts" className="btn btn--white-stroke btn--animated">
-              Contacta-nos
-            </Link>
+        
             <Link to="/Menu" className="btn btn--white btn--animated">
               Ver Menu
             </Link>
