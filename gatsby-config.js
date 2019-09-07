@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Cinnapan - Handmade Cinnamon Rolls`,
-    description: `Cinnapan - Handmade Cinnamon Rolls. Encomende os melhores Cinnamon Rolls do Algarve `,
+    title: `Conferencia`,
+    description: `Conferencia.  `,
     author: `@mash`,
   },
   plugins: [
