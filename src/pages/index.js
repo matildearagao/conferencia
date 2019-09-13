@@ -5,9 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeaderHome from "../components/Homepage/HeaderHome"
 import SectionIntro from "../components/Homepage/SectionIntro"
-import SectionDisplayMenu from "../components/Homepage/SectionDisplayMenu"
-import SectionTestemonials from "../components/Homepage/SectionTestemonials"
-import Separator from "../components/Globals/Separator"
+import SectionLisbonIntro from "../components/Homepage/SectionLisbonIntro"
+import Speakers from "../components/Globals/Speakers"
 
 
 const IndexPage = ({data}) => (
@@ -15,10 +14,9 @@ const IndexPage = ({data}) => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <HeaderHome styleClass="header" logo={data.logo.childImageSharp.fluid}  />
     <main>
-      <SectionIntro chocolateBar={data.chocolateBar.childImageSharp.fluid} cinnamonRoll={data.cinnamonRoll.childImageSharp.fluid} sun={data.sun.childImageSharp.fluid}/>
-      <Separator styleClass="separator--home" />
-      <SectionDisplayMenu cinnapanMenu={data.cinnapanMenu.childImageSharp.fluid} />
-      <SectionTestemonials />
+      <SectionIntro />
+      <Speakers photo1={data.photo1.childImageSharp.fluid}/>
+      <SectionLisbonIntro lisbonBkg={data.lisbonBkg.childImageSharp.fluid} />
     </main>
   </Layout>
 )
@@ -32,35 +30,22 @@ export const query = graphql`
       }
     }
   },
-  logo:file(relativePath: {eq: "logo-placeholder.png"}) {
+  logo:file(relativePath: {eq: "ESCLH-logo.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 600) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   },
-  chocolateBar:file(relativePath: {eq: "chocolate-bar.png"}) {
+  photo1:file(relativePath: {eq: "speaker1.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 200) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   },
-  cinnamonRoll:file(relativePath: {eq: "cinnamon-roll.png"}) {
-    childImageSharp {
-      fluid(maxWidth: 200) {
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
-    }
-  },
-  sun:file(relativePath: {eq: "sun.png"}) {
-    childImageSharp {
-      fluid(maxWidth: 200) {
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
-    }
-  },
-  cinnapanMenu:file(relativePath: {eq: "cinnapan-2_c.jpg"}) {
+
+  lisbonBkg:file(relativePath: {eq: "lisbon.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 400) {
         ...GatsbyImageSharpFluid_tracedSVG

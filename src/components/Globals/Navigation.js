@@ -17,16 +17,16 @@ export default function Navigation() {
                   <Link to="/" className="navigation__link">Home</Link>
                 </li>
                 <li className="navigation__item">
-                  <Link to="/about" className="navigation__link">Conferência</Link>
+                  <Link to="/about" className="navigation__link">Conference</Link>
                 </li>
                 <li className="navigation__item">
-                  <Link to="/events" className="navigation__link">Speakers</Link>
+                  <Link to="/lisbon" className="navigation__link">Lisbon</Link>
                 </li>
                 <li className="navigation__item">
-                  <Link to="/menu" className="navigation__link">Artigos</Link>
+                  <Link to="/papers" className="navigation__link">Submit Papers</Link>
                 </li>
                 <li className="navigation__item">
-                  <Link to="/contacts" className="navigation__link">Contactos</Link>
+                  <Link to="/contacts" className="navigation__link">Contacts</Link>
                 </li>
             </ul>
         </nav>

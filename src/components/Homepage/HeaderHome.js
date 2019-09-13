@@ -10,14 +10,19 @@ const Header = ({ styleClass, logo }) => (
     </div>
     <div className="header__container">
       <div className="header__text-box">
-        <h1> CONFERENCIA NOME</h1>
-        <h3>20 de setembro de 2019</h3>
+        <h1> Professions and Methods <br /> in Comparative Legal History</h1>
+        <h3>1-3 July 2020</h3>
 
-        <em>conferencia details</em>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque eveniet, ab ex illum animi quam itaque odio. Dolore amet at libero unde qui sequi.</p>
+        <em>University of Lisbon, Portugal</em>
 
+<p>The Organising Committee of the 6 th Biennal Conference and the Executive Council of the ESCLH are pleased to call for papers for the upcoming conference to be held. </p>
+  <p><strong>Offers of papers should be submitted by 15 November 2019. </strong></p>
+        
         <Link to="/Menu" className="btn btn--white btn--animated">
-          Ver Conferência
+          See More
+        </Link>
+        <Link to="/Menu" className="btn btn--white btn--animated">
+          Submit paper
         </Link>
       </div>
     </div>
@@ -29,7 +34,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  title: "Cinnapan",
+  title: "Conferencia",
   styleClass: "header",
 }
 

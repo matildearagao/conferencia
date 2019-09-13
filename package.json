@@ -18,7 +18,8 @@
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-datepicker": "github:julien1619/react-datepicker#window-fix",    "react-dom": "^16.8.6",
+    "react-datepicker": "github:julien1619/react-datepicker#window-fix",
+    "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.6.1"
   },
