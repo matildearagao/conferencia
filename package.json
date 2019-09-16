@@ -14,6 +14,7 @@
     "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-source-contentful": "^2.0.52",
     "gatsby-source-filesystem": "^2.0.29",
+    "gatsby-source-googlemaps-geocoding": "^1.0.0",
     "gatsby-transformer-sharp": "^2.1.18",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",

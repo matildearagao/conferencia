@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'gatsby'
+import Map from '../Globals/Map'
 
 export default function Contacts() {
   return (
@@ -43,10 +43,11 @@ export default function Contacts() {
             </p>
           </div>
         </div>
-        <div className="row">
-          google maps
         </div>
-      </div>
+        <div>
+  <Map />
+        </div>
+     
     </section>
   )
 }

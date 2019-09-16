@@ -14,6 +14,9 @@ const Events = ({data}) => (
     <Header styleClass="header--about" title="About Lisbon" logo={data.logo.childImageSharp.fluid}/>
     <main>
     <SectionLisbonIntro lisbonBkg={data.lisbonBkg.childImageSharp.fluid} />
+    
+
+    <Map />
 
     </main>
   </Layout>
