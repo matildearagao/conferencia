@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 import Header from "../components/Globals/Header"
 import SectionLisbonIntro from "../components/Homepage/SectionLisbonIntro"
+import Map from "../components/Globals/Map"
 
 
 const Events = ({data}) => (

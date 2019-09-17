@@ -3,6 +3,8 @@ require("dotenv").config({
 })
 
 module.exports = {
+  //github pages
+  pathPrefix: "/conferencia",
   siteMetadata: {
     title: `Conferencia`,
     description: `Conferencia.  `,
