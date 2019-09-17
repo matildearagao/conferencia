@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 
-export default function Speakers({ photo1, photo2, photo3 }) {
+export default function Speakers({ photo1, photo2, photo3, btn }) {
   return (
     <section className="section-process">
       <div className="container">
@@ -69,11 +69,15 @@ export default function Speakers({ photo1, photo2, photo3 }) {
             </div>
           </div>
         </div>
+
+
+          
       <div className="row u-center-text ">
         <Link to="/Menu" className="btn btn--white btn--animated">
                   View All Speakers
         </Link>
       </div>
+        
       </div>
     </section>
   )

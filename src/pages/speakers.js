@@ -3,25 +3,33 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import Header from "../components/Globals/Header"
-import SectionLisbonIntro from "../components/Homepage/SectionLisbonIntro"
-import Map from "../components/Globals/Map"
+import Speakers from "../components/Globals/Speakers"
 
 
-const Events = ({data}) => (
+const SpeakersPage = ({data}) => (
   <Layout title="Home" >
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Header styleClass="header--about" title="About Lisbon" logo={data.logo.childImageSharp.fluid}/>
+    <Header
+      styleClass="header--about"
+      title="Speakers"
+      logo={data.logo.childImageSharp.fluid}
+    />    
     <main>
-    <SectionLisbonIntro lisbonBkg={data.lisbonBkg.childImageSharp.fluid} />
-    <Map />
+      <Speakers photo1={data.photo1.childImageSharp.fluid} btn={false}/>
     </main>
   </Layout>
 )
 
 export const query = graphql`
 {
+  imgBckg:file(relativePath: {eq: "imgBckg.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3000) {
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  },
   logo:file(relativePath: {eq: "ESCLH-logo.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 600) {
@@ -29,16 +37,23 @@ export const query = graphql`
       }
     }
   },
-  
+  photo1:file(relativePath: {eq: "speaker1.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 200) {
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  },
+
   lisbonBkg:file(relativePath: {eq: "lisbon.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 400) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
-  },
+  }
 }
 `
 
 
-export default Events
+export default SpeakersPage

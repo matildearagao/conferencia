@@ -20,10 +20,10 @@ arguing cases needs to be studied in historical and comparative perspective to
 understand where we are now, and where we might be heading.</p>
           <div className="btn-wrapper">
         
-            <Link to="/Menu" className="btn btn--primary btn--animated">
+            <Link to="/papers" className="btn btn--primary btn--animated">
               Submit Paper
             </Link>
-            <Link to="/Menu" className="btn btn--primary btn--animated">
+            <Link to="/speakers" className="btn btn--primary btn--animated">
               Speakers
             </Link>
           </div>

@@ -18,10 +18,10 @@ const Header = ({ styleClass, logo }) => (
 <p>The Organising Committee of the 6 th Biennal Conference and the Executive Council of the ESCLH are pleased to call for papers for the upcoming conference to be held. </p>
   <p><strong>Offers of papers should be submitted by 15 November 2019. </strong></p>
         
-        <Link to="/Menu" className="btn btn--white btn--animated">
+        <Link to="/about" className="btn btn--white btn--animated">
           See More
         </Link>
-        <Link to="/Menu" className="btn btn--white btn--animated">
+        <Link to="/papers" className="btn btn--white btn--animated">
           Submit paper
         </Link>
       </div>

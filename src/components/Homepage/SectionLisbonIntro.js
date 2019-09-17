@@ -15,7 +15,7 @@ export default function SectionDisplayMenu({lisbonBkg}) {
                     <p>Lisbon offers many accommodation possibilities ranging from five-star hotels, through smaller hotels and private rooms to beds in youth and student hostels. </p>
 <p>For some postgraduates the University of Lisbon, might be able to offer cheaper accommodation in student dormitories, and anything available will be advertised in due course.</p>
             </div>
-            <Link to="/Menu" className="btn btn--primary btn--animated">
+            <Link to="/lisbon" className="btn btn--primary btn--animated">
               See more of Lisbon
             </Link>        </div>
     </section>
