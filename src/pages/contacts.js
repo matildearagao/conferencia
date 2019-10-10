@@ -14,7 +14,7 @@ const ContactPage = ({data}) => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Header styleClass="header--about" title="Contacts" logo={data.logo.childImageSharp.fluid}/>
     <main>
-      <Contacts address={data.address.childImageSharp.fluid}/>
+      <Contacts />
       <Links />
       <Map />
     </main>
