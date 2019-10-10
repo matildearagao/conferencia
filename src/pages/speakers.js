@@ -16,7 +16,7 @@ const SpeakersPage = ({data}) => (
       logo={data.logo.childImageSharp.fluid}
     />    
     <main>
-      <Speakers photo1={data.photo1.childImageSharp.fluid} btn={false}/>
+      <Speakers photo1={data.photo1.childImageSharp.fluid} />
     </main>
   </Layout>
 )
@@ -30,7 +30,7 @@ export const query = graphql`
       }
     }
   },
-  logo:file(relativePath: {eq: "ESCLH-logo.jpg"}) {
+  logo:file(relativePath: {eq: "ESCLH-logo-branco.png"}) {
     childImageSharp {
       fluid(maxWidth: 600) {
         ...GatsbyImageSharpFluid_tracedSVG

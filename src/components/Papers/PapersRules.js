@@ -5,7 +5,7 @@ import React from "react"
 export default function PapersRules() {
   return (
     
-      <div className="container  u-margin-top-medium">
+      <div className="container  u-margin-top-medium u-margin-bottom-medium">
         <div className="u-center-text u-margin-bottom-small">
           <h2 className="heading-main u-margin-bottom-small">
           Practical details: 

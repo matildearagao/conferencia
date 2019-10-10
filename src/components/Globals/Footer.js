@@ -6,9 +6,8 @@ export default function Footer() {
     <div className="container">
       <div className="row">
       <div className="col-10 col-md-4 ">
-        <p><strong>Adress:</strong> Universidade de Lisboa</p>
-        <p><strong>Tel:</strong> +351222222222</p>
-        <p><strong>Email</strong> mail@mail.pt</p>
+        <p> Universidade de Lisboa</p>
+        <p> esclhinlisbon2020@fd.ulisboa.pt</p>
       </div>
       <div className="col-10 col-md-4 ">
         </div>

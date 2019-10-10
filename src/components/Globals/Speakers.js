@@ -12,12 +12,10 @@ export default function Speakers({ photo1, photo2, photo3, btn }) {
             Our Main Speakers
           </h2>
           <p className="paragraph paragraph--white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus modi
-            maxime quos voluptate provident labore voluptatem amet nobis, ipsum
-            nihil.
+          To be announced soon
           </p>
         </div>
-        <div className="row u-center-text u-margin-bottom-medium">
+        {/* <div className="row u-center-text u-margin-bottom-medium">
           <div className="section-process__wrapper">
             <div className="col-10 col-md-4 u-center-col">
               <Img
@@ -76,7 +74,7 @@ export default function Speakers({ photo1, photo2, photo3, btn }) {
         <Link to="/Menu" className="btn btn--white btn--animated">
                   View All Speakers
         </Link>
-      </div>
+      </div> */}
         
       </div>
     </section>

@@ -23,9 +23,9 @@ understand where we are now, and where we might be heading.</p>
             <Link to="/papers" className="btn btn--primary btn--animated">
               Submit Paper
             </Link>
-            <Link to="/speakers" className="btn btn--primary btn--animated">
+            {/* <Link to="/speakers" className="btn btn--primary btn--animated">
               Speakers
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

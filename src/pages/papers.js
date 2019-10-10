@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 import Header from "../components/Globals/Header"
 import PapersRules from "../components/Papers/PapersRules"
-import SubmitPaper from "../components/Papers/SubmitPaper"
+
 
 
 const MenuPage = ({ data }) => (
@@ -20,14 +20,14 @@ const MenuPage = ({ data }) => (
     <main>
     {/* <Menu items={data.menu} /> */}
     <PapersRules />
-    <SubmitPaper />
+   
     </main>
   </Layout>
 )
 
 export const query = graphql`
   {
-    logo: file(relativePath: { eq: "ESCLH-logo.jpg" }) {
+    logo: file(relativePath: { eq: "ESCLH-logo-branco.png" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG

@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 const Header = ({ styleClass, logo }) => (
   <header className={styleClass}>
     <div className="header__logo-box">
-      <Img fluid={logo} alt="Cinnapan logo" className="header__logo" />
+      <Img fluid={logo} alt="ESCLH logo" className="header__logo" />
     </div>
     <div className="header__container">
       <div className="header__text-box">

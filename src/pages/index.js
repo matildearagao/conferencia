@@ -30,7 +30,7 @@ export const query = graphql`
       }
     }
   },
-  logo:file(relativePath: {eq: "ESCLH-logo.jpg"}) {
+  logo:file(relativePath: {eq: "ESCLH-logo-branco.png"}) {
     childImageSharp {
       fluid(maxWidth: 600) {
         ...GatsbyImageSharpFluid_tracedSVG
