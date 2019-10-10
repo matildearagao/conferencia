@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Header from "../components/Globals/Header"
+import Links from "../components/Contacts/Links"
 import SectionLisbonIntro from "../components/Homepage/SectionLisbonIntro"
 import Map from "../components/Globals/Map"
 
@@ -15,6 +16,7 @@ const Events = ({data}) => (
     <Header styleClass="header--about" title="About Lisbon" logo={data.logo.childImageSharp.fluid}/>
     <main>
     <SectionLisbonIntro lisbonBkg={data.lisbonBkg.childImageSharp.fluid} />
+    <Links />
     <Map />
     </main>
   </Layout>

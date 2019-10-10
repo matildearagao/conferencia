@@ -30,13 +30,6 @@ export const query = graphql`
       }
     }
   },
-  address:file(relativePath: {eq: "address.svg"}) {
-    childImageSharp {
-      fluid(maxWidth: 600) {
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
-    }
-  },
   
 }
 `

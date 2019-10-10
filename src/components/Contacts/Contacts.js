@@ -1,7 +1,7 @@
 import React from "react"
-import Img from 'gatsby-image'
 
-export default function Contacts({address}) {
+
+export default function Contacts() {
   return (
     <section className="section-events">
       <div className="u-center-text u-margin-bottom-small">
@@ -25,11 +25,11 @@ export default function Contacts({address}) {
         </div>
   
         <div className="col-10 col-md-6 u-center-col">
-         <Img fluid={address} alt="address"/>
+        <div className="square" />
           <div className="section-process__text">
             <h5 className="title-bold">Addresses</h5>
             <p className="paragraph">
-            Faculty of Law Lisbon University
+            Faculty of Law Lisbon University<br/>
             Alameda da Universidade MB, Lisboa
             </p>
           </div>
